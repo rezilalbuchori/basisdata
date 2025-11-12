@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Basis Data</title>
+	<link rel="stylesheet" href="/basis_data/bootstrap.css" type="text/css">
+	<link rel="stylesheet" href="/basis_data/style.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<style>
+        .project-container {
+			background-color: white;
+			max-width: 1200px;
+			margin: 0 auto;
+			box-shadow: 0 0 30px rgba(0,0,0,0.1);
+		}
+		.full-width-image {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.breadcrumb {
+			padding: 20px;
+			background-color: #f8f9fa;
+			font-family: 'IBM Plex Mono', monospace;
+			font-size: 14px;
+		}
+		.breadcrumb a {
+			color: black;
+			text-decoration: none;
+		}
+		.breadcrumb a:hover {
+			text-decoration: underline;
+		}
+		.project-title {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			font-size: 50pt;
+			transform: translate(-50%, -50%);
+			color: white;
+			text-align: center;
+			text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+		}
+		.image-container {
+			position: relative;
+		}
+		
+		/* Slider Styles */
+		.project-slider {
+			position: relative;
+			width: 100%;
+			overflow: hidden;
+		}
+		.slider-container {
+			display: flex;
+			transition: transform 0.5s ease;
+			width: 300%;
+		}
+		.slider-slide {
+			width: 33.33%;
+			flex-shrink: 0;
+		}
+		.slider-slide img {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.slider-controls {
+			position: absolute;
+			bottom: 20px;
+			left: 50%;
+			transform: translateX(-50%);
+			display: flex;
+			gap: 10px;
+		}
+		.slider-dot {
+			width: 10px;
+			height: 10px;
+			background-color: rgba(255,255,255,0.5);
+			border-radius: 50%;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+		.slider-dot.active {
+			background-color: white;
+		}
+		
+		/* Slider Checkbox Hack */
+		.slider-toggle {
+			display: none;
+		}
+		#slide1:checked ~ .slider-container {
+			transform: translateX(0);
+		}
+		#slide2:checked ~ .slider-container {
+			transform: translateX(-33.33%);
+		}
+		#slide3:checked ~ .slider-container {
+			transform: translateX(-66.66%);
+		}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li><a href="/Portofolio/index.html#hubungi">contact</a></li>
+			<li>works</li>
+			<li>expertience</li>
+			<li class="empty"></li>
+			<li>behance</li>
+			<li><a href="https://www.instagram.com/0c_o1x?igsh=MTV4bDBiZnh0aWFyMw==" target="_blank">instagram</a></li>
+			<li>linkedin</li>
+		</ul>
+	</nav>
+
+	<div class="project-container">
+		<div class="image-container">
+			<img src="/basis_data/Data Banyak.jpg" class="full-width-image" alt="Cosmetics Branding Project">
+			<h1 class="project-title">Database management System</h1>
+		</div>
+		<div class="breadcrumb">
+			<a href="https://rezilalbuchori.github.io/portofolio/">Home</a> / <a href="/basis_data/index.html">Database management System</a>
+		</div>
+		<section class="project" style="padding-top: 50px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Mengenal Dunia Basis Data</h2>
+						<p>Di balik setiap aplikasi, website, dan sistem digital yang kita gunakan setiap hari, ada satu hal penting yang bekerja secara diam-diam — yaitu basis data. Basis data berfungsi menyimpan, mengatur, dan mengelola informasi agar mudah diakses kapan pun dibutuhkan. Tanpa basis data, sistem digital tidak akan mampu berjalan dengan efisien. Memahami dasar-dasarnya berarti memahami jantung dari dunia teknologi.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Mengapa Basis Data Begitu Penting</h2>
+						<p>Bayangkan sebuah toko online tanpa catatan produk atau pelanggan. Semua akan kacau tanpa sistem penyimpanan data yang teratur. Basis data memastikan semua informasi tersimpan dengan rapi, mudah dicari, dan aman dari kehilangan. Di era digital, kemampuan mengelola data dengan baik adalah salah satu kunci utama keberhasilan, baik untuk bisnis, pendidikan, maupun organisasi.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Cara Kerja dan Jenis Basis Data</h2>
+						<p>Basis data bekerja dengan prinsip sederhana: menyimpan data secara terstruktur agar bisa diolah dengan cepat. Ada berbagai jenis basis data — seperti relasional, hierarkis, dan NoSQL — yang masing-masing punya keunggulan tersendiri. Misalnya, basis data relasional cocok untuk sistem keuangan, sedangkan NoSQL lebih fleksibel untuk aplikasi media sosial. Mengetahui perbedaannya membantu kita memilih teknologi yang tepat untuk kebutuhan tertentu.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Masa Depan Pengelolaan Data</h2>
+						<p>Seiring perkembangan teknologi, cara kita mengelola data juga terus berevolusi. Kini, banyak sistem basis data beralih ke cloud untuk efisiensi dan keamanan yang lebih tinggi. Data bukan sekadar angka atau teks — tapi sumber pengetahuan yang bisa mendorong inovasi. Mereka yang paham cara mengolah data akan selalu selangkah lebih maju di dunia digital yang terus berkembang.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Data Stroge</h2>
+						<div class="project-slider">
+							<div class="slider-container">
+								<div class="slider-slide">
+								<img src="/basis_data/Big Data.jpg" alt="Dashboard App">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<footer id="contact">
+		<h2>Setiap tabel punya cerita <br> setiap baris punya makna</h2>
+			<p>Made by Andi Rezil Albuchori 2025</p>
+		</footer>
+	</body>
+	</html>
